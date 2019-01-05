@@ -2,10 +2,17 @@
     font-family: 'EB Garamond', serif;
 }
 
+
+body {
+    scroll-snap-type: y mandatory;
+}
+
 section {
     height:100vh;
     position: relative;
     z-index:0;
+    /* Not supported on firefox until version 66 */
+    scroll-snap-align: start;
 }
 
 .centered {
