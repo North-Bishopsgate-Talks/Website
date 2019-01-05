@@ -4,6 +4,7 @@
 
 
 body {
+    overscroll-behavior-y: none;
     scroll-snap-type: y mandatory;
 }
 
