@@ -51,16 +51,16 @@ footer a {
     transform:rotate(180deg);
     -ms-transform:rotate(180deg);
     -webkit-transform:rotate(180deg);
-  -webkit-transition: -webkit-transform .8s ease-in-out;
-    -ms-transition: -ms-transform .8s ease-in-out;
-    transition: transform .8s ease-in-out; 
+  -webkit-transition: -webkit-transform .5s ease;
+    -ms-transition: -ms-transform .5s ease;
+    transition: transform .5s ease; 
 }
 
 .deRotate180 {
     transform:rotate(0deg);
     -ms-transform:rotate(0deg);
     -webkit-transform:rotate(0deg);
-  -webkit-transition: -webkit-transform .8s ease-in-out;
-    -ms-transition: -ms-transform .8s ease-in-out;
-    transition: transform .8s ease-in-out; 
+  -webkit-transition: -webkit-transform .5s ease;
+    -ms-transition: -ms-transform .5s ease;
+    transition: transform .5s ease; 
 }
