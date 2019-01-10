@@ -26,7 +26,6 @@ section {
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    width:65%;
 
 }
 
@@ -40,6 +39,12 @@ footer {
 
 
 footer a {
+    text-decoration:none;
+    color: black;
+}
+
+section#contact a {
+
     text-decoration:none;
     color: black;
 }
