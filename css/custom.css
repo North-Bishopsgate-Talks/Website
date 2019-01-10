@@ -5,7 +5,9 @@
 
 body {
     overscroll-behavior-y: none;
-    scroll-snap-type: y mandatory;
+    -webkit-scroll-snap-type: y mandatory;
+        -ms-scroll-snap-type: y mandatory;
+            scroll-snap-type: y mandatory;
 }
 
 section {
@@ -21,13 +23,15 @@ section {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    /* width:65%; */
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 
 }
 
 
 footer {
+    position: -webkit-sticky; /* Safari */
     position: sticky;
     bottom: 0;
     z-index: 1;
@@ -58,8 +62,10 @@ section#contact a {
     -ms-transform:rotate(180deg);
     -webkit-transform:rotate(180deg);
   -webkit-transition: -webkit-transform .5s ease;
-    -ms-transition: -ms-transform .5s ease;
-    transition: transform .5s ease; 
+    transition: -webkit-transform .5s ease;
+    -o-transition: transform .5s ease;
+    transition: transform .5s ease;
+    transition: transform .5s ease, -webkit-transform .5s ease; 
 }
 
 .deRotate180 {
@@ -67,6 +73,8 @@ section#contact a {
     -ms-transform:rotate(0deg);
     -webkit-transform:rotate(0deg);
   -webkit-transition: -webkit-transform .5s ease;
-    -ms-transition: -ms-transform .5s ease;
-    transition: transform .5s ease; 
+    transition: -webkit-transform .5s ease;
+    -o-transition: transform .5s ease;
+    transition: transform .5s ease;
+    transition: transform .5s ease, -webkit-transform .5s ease; 
 }
