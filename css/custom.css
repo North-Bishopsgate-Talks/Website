@@ -10,6 +10,11 @@ body {
             scroll-snap-type: y mandatory;
 }
 
+header a {
+    text-decoration:none;
+    color: black;
+}
+
 section {
     height:100vh;
     position: relative;
@@ -45,7 +50,12 @@ footer a {
 
 section#contact a {
 
-    text-decoration:none;
+    text-decoration:underline;
+    color: black;
+}
+
+section#safeguarding a {
+
     color: black;
 }
 
